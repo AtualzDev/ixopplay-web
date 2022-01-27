@@ -384,3 +384,49 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
 }
+
+
+/* CONTACT US */
+#contact {
+    position: relative;
+    background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    height: 60%;
+}
+.contact-form form{
+    background-color: rgba(255, 255, 255, 0.363);
+    height: 100%;
+    padding: 20% 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.contact-form form .text{
+    height: 80%;
+}
+#contact .social-media-buttons-holder {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .social-media-buttons-holder a {
+    text-decoration: none;
+}
+
+.social-media-buttons-holder li {
+    list-style: none;
+}
