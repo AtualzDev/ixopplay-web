@@ -17,7 +17,7 @@ function showSlides() {
         slideIndex = 1
     }
     slides[slideIndex - 1].style.display = "block";
-    
+
     setTimeout(showSlides, 6000)
 }
 
@@ -31,20 +31,40 @@ window.onscroll = () => {
         const sectionTop = section.offsetTop;
         if (scrollY >= sectionTop - 90) {
             current = section.getAttribute("id");
-            console.log(current)
         }
     });
-    
-    
+
+
     navLi.forEach((li) => {
         li.classList.remove("active-li");
     })
-    if(current == 'know-us'){
+    if (current == 'know-us') {
         navLi.item(0).classList.add("active-li");
-    }else if (current == 'consumers'){
+    } else if (current == 'consumers') {
         navLi.item(1).classList.add("active-li");
+    }else if (current == 'shopkeepers') {
+        navLi.item(2).classList.add("active-li");
+    }else if (current == 'contact-us') {
+        navLi.item(3).classList.add("active-li");
     }
 
-
-    
 };
+
+
+//SCROLL WRAPPER
+const wrapper = document.querySelector("#consumers .wrapper");
+
+
+scrollWrapper();
+
+function scrollWrapper() {
+    setTimeout(() => {
+        if (wrapper.scrollLeft < wrapper.scrollWidth) {
+            wrapper.scrollLeft = wrapper.scrollWidth;
+        }
+    }, 2000);
+    setTimeout(() => {
+        if (wrapper.scrollLeft > 0) wrapper.scrollLeft = -wrapper.scrollWidth
+        scrollWrapper();
+    }, 2000)
+}
