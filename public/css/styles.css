@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/**FUNCTIONS**/
+
+.hide{
+    display: none;
+}
+.show{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    height: 100vh;
+    width: 20%;
+
+}
+.show:hover + .hide {
+    display: block;
+}
+
+
+/**NAV-BAR*/
+.nav-bar{
+    position: fixed;
+    transform: translateY(50%);
+    right: 2%;
+    z-index: 9999;
+    
+}
+.nav-bar:hover{
+    display: block;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
+.nav-bar li{
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 25px;
+    margin: 4px 5px;
+    list-style: none;
+    width: 100%;
+    
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.nav-bar li:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.nav-item-holder{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 12rem;
+}
+
+
+
+.nav-item-holder:hover .nav-circle-inside{
+    background-color: white;
+    height: 80%;
+    width: 90%;
+    border-radius: 50%;
+}
+
+
+.nav-circle-hover{
+    border: 2px solid white;
+    height: 16px;
+    width: 18px;
+    border-radius: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/**NAV-BAR*/
+
+
+#start{
+    background-image: url("/public/assets/images/firstsection.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#start .social-media-buttons-holder{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#start .social-media-buttons-holder a{
+    text-decoration: none;
+}
+.social-media-buttons-holder li{
+    list-style: none;
+}
+
+#start .logo-holder{
+    width: 30%;
+}
+#start img{
+    width: 100%;
+}
+
+#start .subtitle{
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+    /* font shadow */
+    text-shadow: 2px 4px 2px rgb(255, 255, 255);
+}
+#start .version-holder{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/* CONSUMIDORES */
+#know-us{
+    position: relative;
+    background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#know-us img{
+    margin: 2%;
+    position: absolute;
+    top: 0;
+}
+#know-us .subtitle{
+    width: 60%;
+    transform: translate(20%, 50%);
+    text-align: center;
+    font-size: 1.5rem;
+    /* font shadow */
+    color: #FA8834;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+
+
