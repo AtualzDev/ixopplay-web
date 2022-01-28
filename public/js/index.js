@@ -44,8 +44,11 @@ window.onscroll = () => {
         navLi.item(1).classList.add("active-li");
     }else if (current == 'shopkeepers') {
         navLi.item(2).classList.add("active-li");
-    }else if (current == 'contact-us') {
+    }else if (current == 'investors') {
         navLi.item(3).classList.add("active-li");
+    
+    }else if (current == 'contact') {
+        navLi.item(6).classList.add("active-li");
     }
 
 };
@@ -68,3 +71,21 @@ function scrollWrapper() {
         scrollWrapper();
     }, 2000)
 }
+
+
+//MAP
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
