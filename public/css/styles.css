@@ -497,7 +497,119 @@
     bottom: 0;
 }
 
+/* WHO WE ARE */
+#who-we-are{
+    position: relative;
+    background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    padding: 0 6rem;
+    justify-content: center;
+    align-items: center;
+}
 
+#who-we-are .info-holder{
+    position: relative;
+    color: #113684;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 2%;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 0.8rem;
+    height: 60%;
+}
+#who-we-are .info-holder a{
+    position: absolute;
+    text-decoration: 0;
+    bottom: -40px;
+    right: 0;
+    width: max-content;
+    padding: 0.6rem 0.5rem;
+    background-color: #EF6C00;
+    border-radius: 22px;
+}
+#who-we-are .info-holder span{
+    font-family: 'Rosario', sans-serif;
+}
+#who-we-are .image-holder img{
+    width: 90%;
+}
+
+
+/* INDUSTRIES */
+#industries{
+    position: relative;
+    background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#industries .page-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    left: 0;
+    top:0;
+    margin: 2%;
+    z-index: 999;
+}
+#industries .subtitle {
+    z-index: 9999;
+    position: absolute;
+    top: 5%;
+    width: 60%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+    color: #FA8834;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+#industries .page-title span{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+#industries .info-holder{
+    z-index: 999;
+    display: flex;
+    width: 80%;
+}
+#industries .info-holder li{
+    margin: 0 10px;
+    color: black;
+    font-weight: 600;
+    background-color: #FA8834;
+    padding: 5% 2%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.452);
+}
+#industries .image-holder{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+#industries .image-holder img{
+    width: 20%;
+    height: 50%;
+}
 
 /* CONTACT US */
 #contact {
@@ -564,6 +676,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#contact .adress-holder p{
+    font-family: 'Rosario', sans-serif;
 }
 #map{
     height: 200px;

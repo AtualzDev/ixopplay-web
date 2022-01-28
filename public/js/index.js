@@ -42,12 +42,16 @@ window.onscroll = () => {
         navLi.item(0).classList.add("active-li");
     } else if (current == 'consumers') {
         navLi.item(1).classList.add("active-li");
-    }else if (current == 'shopkeepers') {
+    } else if (current == 'shopkeepers') {
         navLi.item(2).classList.add("active-li");
-    }else if (current == 'investors') {
+    } else if (current == 'investors') {
         navLi.item(3).classList.add("active-li");
-    
-    }else if (current == 'contact') {
+    } else if(current == 'industries'){
+        navLi.item(4).classList.add("active-li");
+    }
+    else if (current == 'who-we-are') {
+        navLi.item(5).classList.add("active-li");
+    } else if (current == 'contact') {
         navLi.item(6).classList.add("active-li");
     }
 
@@ -65,27 +69,9 @@ function scrollWrapper() {
         if (wrapper.scrollLeft < wrapper.scrollWidth) {
             wrapper.scrollLeft = wrapper.scrollWidth;
         }
-    }, 2000);
+    }, 6000);
     setTimeout(() => {
         if (wrapper.scrollLeft > 0) wrapper.scrollLeft = -wrapper.scrollWidth
         scrollWrapper();
-    }, 2000)
+    }, 6000)
 }
-
-
-//MAP
-// Initialize and add the map
-// function initMap() {
-//     // The location of Uluru
-//     const uluru = { lat: -25.344, lng: 131.036 };
-//     // The map, centered at Uluru
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//       zoom: 4,
-//       center: uluru,
-//     });
-//     // The marker, positioned at Uluru
-//     const marker = new google.maps.Marker({
-//       position: uluru,
-//       map: map,
-//     });
-//   }
