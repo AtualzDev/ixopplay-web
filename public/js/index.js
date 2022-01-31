@@ -4,7 +4,9 @@ showSlides();
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slider-img");
+    let dots = document.querySelectorAll(".dot");
     const sliderFades = document.querySelectorAll(".slider-fade");
+    
     sliderFades.forEach((fade) => {
         fade.classList.remove("slider-fade")
     })
@@ -12,20 +14,26 @@ function showSlides() {
         slides[i].style.display = "none";
         slides[i].classList.add("slider-fade");
     }
+    for (let index = 0; index < dots.length; index++) {
+        dots[index].classList.remove("active-dot");
+    }
+    dots[slideIndex - 1].classList.add("active-dot");
+
     slideIndex++;
     if (slideIndex > slides.length) {
         slideIndex = 1
     }
+    
     slides[slideIndex - 1].style.display = "block";
 
-    setTimeout(showSlides, 6000)
+    setTimeout(showSlides, 5000)
 }
 
 //SECTIONS CHECK
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-bar .nav-item-holder li");
 window.onscroll = () => {
-    var current = "";
+    let current = "";
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;

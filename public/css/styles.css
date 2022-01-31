@@ -176,7 +176,12 @@
     font-weight: bold;
 }
 
-
+.back-image{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+}
 /* CONSUMIDORES */
 #know-us {
     position: relative;
@@ -215,6 +220,9 @@
 /* SLIDER */
 .slider {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     height: 50%;
     max-width: fit-content;
@@ -261,7 +269,10 @@
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-
+.dots-holder{
+    display: flex;
+    margin-top: 5px;
+}
 .dot {
     cursor: pointer;
     height: 14px;
@@ -276,9 +287,11 @@
 
 .dot:hover {
     background-color: #717171;
+
 }
-.active{
-    background-color: red;
+.active-dot{
+    background-color: white;
+
 }
 /*SLIDER*/
 
@@ -374,10 +387,10 @@
 /*LOJISTAS*/
 #shopkeepers {
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("/public/assets/images/backgrounds/firstsection.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -437,10 +450,10 @@
 /* INVESTORS */
 #investors {
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("/public/assets/images/backgrounds/secondsection.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     color: white;
@@ -450,6 +463,7 @@
 }
 #investors .page-title {
     display: flex;
+    display: none;
     align-items: center;
     justify-content: start;
     position: absolute;
@@ -464,6 +478,7 @@
 }
 #investors .content-holder{
     display: flex;
+    display: none;
     padding-left: 3%;
 }
 #investors .benefits-holder{
@@ -521,6 +536,7 @@
     color: #EF6C00;
 }
 #investors .page-hint{
+    display: none;
     position: absolute;
     font-size: 1.2rem;
     right: 0;
@@ -532,10 +548,10 @@
 /* WHO WE ARE */
 #who-we-are{
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("/public/assets/images/backgrounds/firstsection.jpg"); */
+    /* background-position: right; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     padding: 0 6rem;
@@ -555,6 +571,7 @@
     background-color: rgba(255, 255, 255, 0.767);
     border-radius: 0.8rem;
     height: 60%;
+    display: none;
 }
 #who-we-are .info-holder a{
     position: absolute;
@@ -569,6 +586,9 @@
 #who-we-are .info-holder span{
     font-family: 'Rosario', sans-serif;
 }
+#who-we-are .image-holder{
+    display: none;
+}
 #who-we-are .image-holder img{
     width: 90%;
 }
@@ -577,10 +597,10 @@
 /* INDUSTRIES */
 #industries{
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("/public/assets/images/backgrounds/secondsection.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     color: white;
@@ -590,6 +610,7 @@
 }
 #industries .page-title{
     display: flex;
+    display: none;
     align-items: center;
     justify-content: start;
     position: absolute;
@@ -599,6 +620,7 @@
     z-index: 999;
 }
 #industries .subtitle {
+    display: none;
     z-index: 9999;
     position: absolute;
     top: 5%;
@@ -617,6 +639,7 @@
 #industries .info-holder{
     z-index: 999;
     display: flex;
+    display: none;
     width: 80%;
 }
 #industries .info-holder li{
@@ -629,11 +652,13 @@
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.452);
 }
 #industries .image-holder{
+    
     position: absolute;
     width: 90%;
     height: 80%;
     bottom: 0;
     display: flex;
+    display: none;
     align-items: flex-end;
 }
 #industries .image-holder img{
@@ -644,10 +669,10 @@
 /* CONTACT US */
 #contact {
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-position: center;
+    /* background-image: url("/public/assets/images/backgrounds/firstsection.jpg"); */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -708,6 +733,8 @@
 }
 #contact .adress-holder p{
     font-family: 'Rosario', sans-serif;
+    display: none;
+
 }
 #map{
     height: 200px;
@@ -721,6 +748,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    display: none;
 }
 
 #contact .social-media-buttons-holder a {
