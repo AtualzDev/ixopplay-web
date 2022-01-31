@@ -27,13 +27,38 @@
 
 
 /**NAV-BAR*/
-.nav-bar {
-    position: fixed;
-    transform: translateY(50%);
-    right: 2%;
-    z-index: 9999;
 
+@media (max-width: 1600px) {
+    .nav-bar {
+        position: fixed;
+        transform: translateY(50%);
+        z-index: 9999;
+        right: 5%;
+    
+    }
+    
 }
+@media (min-width: 1650px) {
+    .nav-bar {
+        position: fixed;
+        transform: translateY(50%);
+        z-index: 9999;
+        right: 15%;
+    
+    }
+    
+}
+@media (min-width: 1900px) {
+    .nav-bar {
+        position: fixed;
+        transform: translateY(50%);
+        z-index: 9999;
+        right: 20%;
+    
+    }
+    
+}
+
 
 .nav-bar:hover {
     display: block;
@@ -104,9 +129,9 @@
 
 #start {
     background-image: url("/public/assets/images/firstsection.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     flex-direction: column;
