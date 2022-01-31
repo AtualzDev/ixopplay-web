@@ -215,10 +215,10 @@
 /* SLIDER */
 .slider {
     display: flex;
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 50%;
     max-width: fit-content;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-bottom: 5%;
 }
 #know-us .img-holder {
