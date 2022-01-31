@@ -27,7 +27,6 @@
 /**NAV-BAR*/
 .nav-bar {
     position: fixed;
-    width: 20%;
     transform: translateY(50%);
     right: 2%;
     z-index: 9999;
@@ -52,9 +51,7 @@
     text-align: center;
     padding: 4px 8px;
     border-radius: 25px;
-    margin: 4px 5px;
     list-style: none;
-    width: 100%;
 }
 
 .nav-bar li:hover {
@@ -65,7 +62,8 @@
 }
 
 .nav-item-holder {
-    width: 100%;
+    width: 180px;
+    height: 30px;
     position: relative;
     display: flex;
     align-items: center;
@@ -89,7 +87,7 @@
 
 .nav-circle-hover {
     position: absolute;
-    right: 0;
+    right: -10px;
     border: 2px solid white;
     width: 20px;
     height: 20px;
@@ -156,7 +154,6 @@
 #know-us {
     position: relative;
     background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,7 +256,6 @@
 #consumers {
     position: relative;
     background-image: url("/public/assets/images/backgrounds/thirdsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -348,7 +344,6 @@
 #shopkeepers {
     position: relative;
     background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -412,7 +407,6 @@
 #investors {
     position: relative;
     background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -508,7 +502,6 @@
 #who-we-are{
     position: relative;
     background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,7 +547,6 @@
 #industries{
     position: relative;
     background-image: url("/public/assets/images/backgrounds/secondsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -622,7 +614,6 @@
 #contact {
     position: relative;
     background-image: url("/public/assets/images/backgrounds/firstsection.jpg");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
