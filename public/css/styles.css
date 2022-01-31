@@ -180,16 +180,18 @@
 /* CONSUMIDORES */
 #know-us {
     position: relative;
-    background-image: url("/public/assets/images/slider/ixopplaytelafundo.png");
+    /* background-image: url("/public/assets/images/slider/ixopplaytelafundo.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
+    align-items: flex-start;
 }
 #know-us .back-image{
+    height: 100%;
+    width:100%;
     position: absolute;
     z-index: -1;
 }
@@ -212,12 +214,9 @@
 
 /* SLIDER */
 .slider {
-    position: absolute;
-    bottom: 60px;
     display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-    
+    margin-left: 20%;
+    margin-bottom: 5%;
 
 }
 #know-us .img-holder {
