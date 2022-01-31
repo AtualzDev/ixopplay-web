@@ -186,7 +186,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 #know-us .back-image{
@@ -213,7 +213,7 @@
 /* SLIDER */
 .slider {
     position: absolute;
-    transform: translateY(35%);
+    bottom: 60px;
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
