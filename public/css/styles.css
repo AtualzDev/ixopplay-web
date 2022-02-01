@@ -34,6 +34,12 @@ button{
     font-size: 22px;
     font-weight: bold;
     background-color: #EF6C00;
+    color: white;
+    border-radius: 15px;
+    border:none;
+}
+section{
+    height: 800px
 }
 /**NAV-BAR*/
 
@@ -588,6 +594,11 @@ button{
     border-radius: 0.8rem;
     height: 60%;
     display: none;
+}
+#who-we-are button{
+    position: absolute;
+    bottom: 20px;
+    left:282px;
 }
 #who-we-are .info-holder a{
     position: absolute;
