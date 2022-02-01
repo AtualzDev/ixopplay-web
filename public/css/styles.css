@@ -31,8 +31,8 @@
 @media (max-width: 1600px) {
     .nav-bar {
         position: fixed;
-        transform: translateY(50%);
         z-index: 9999;
+        top: 5%;
         right: 5%;
     
     }
@@ -41,8 +41,8 @@
 @media (min-width: 1650px) {
     .nav-bar {
         position: fixed;
-        transform: translateY(50%);
         z-index: 9999;
+        top: 15%;
         right: 15%;
     
     }
