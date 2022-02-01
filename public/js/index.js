@@ -77,7 +77,7 @@ function scrollWrapper() {
         wrapper.scrollLeft = 0;
     }else if (wrapper.scrollLeft < wrapper.scrollWidth) {
        setTimeout(() => {
-        wrapper.scrollLeft += 4;
+        wrapper.scrollLeft += 6;
         scrollWrapper();
     }, 100);
     }
