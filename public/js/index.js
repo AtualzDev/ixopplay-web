@@ -73,13 +73,16 @@ const wrapper = document.querySelector("#consumers .wrapper");
 scrollWrapper();
 
 function scrollWrapper() {
-    setTimeout(() => {
-        if (wrapper.scrollLeft < wrapper.scrollWidth) {
-            wrapper.scrollLeft = wrapper.scrollWidth;
-        }
-    }, 6000);
-    setTimeout(() => {
-        if (wrapper.scrollLeft > 0) wrapper.scrollLeft = -wrapper.scrollWidth
+    if(wrapper.scrollLeft >= wrapper.scrollWidth){
+        wrapper.scrollLeft = 0;
+    }else if (wrapper.scrollLeft < wrapper.scrollWidth) {
+       setTimeout(() => {
+        wrapper.scrollLeft += 2;
         scrollWrapper();
-    }, 6000)
+    }, 100);
+    }
+    // if (wrapper.scrollLeft > 0) wrapper.scrollLeft = -wrapper.scrollWidth
+    
+    
+    
 }

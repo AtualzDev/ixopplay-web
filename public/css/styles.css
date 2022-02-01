@@ -347,8 +347,8 @@
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
-    width: 90%;
     overflow-x: hidden;
+    width: 90%;
     border-radius: 4px;
     margin-top: 10rem;
     background-color: rgba(0, 0, 0, 0.329);
