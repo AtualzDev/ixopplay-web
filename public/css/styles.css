@@ -735,19 +735,25 @@
 }
 #contact .adress-holder{
     display: flex;
+    height: 100%;
+    width: 80%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 #contact .adress-holder p{
     font-family: 'Rosario', sans-serif;
     display: none;
 
 }
-#map{
-    height: 200px;
-    width: 100%;
-}
 
+#map{
+    height: 100%;
+    width: 80%;
+}
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
 #contact .social-media-buttons-holder {
     position: absolute;
     bottom: 0;
