@@ -299,10 +299,10 @@
 /* CONSUMIDORES */
 #consumers {
     position: relative;
-    background-image: url("/public/assets/images/backgrounds/thirdsection.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("/public/assets/images/backgrounds/thirdsection.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -319,6 +319,7 @@
     font-size: 2rem;
     color: #FA8834;
     text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    display: none;
 }
 
 #consumers .page-title {
@@ -328,11 +329,15 @@
     left: 0;
     top:0;
     margin: 2%;
+    display: none;
+
 }
 #consumers .page-title span{
     margin-left: 5rem;
     font-size: 1.5rem;
     color: white;
+    display: none;
+
 }
 
 #consumers .wrapper{
@@ -346,8 +351,9 @@
     overflow-x: hidden;
     border-radius: 4px;
     margin-top: 10rem;
-    background-color: rgba(255, 255, 255, 0.103);
+    background-color: rgba(0, 0, 0, 0.329);
     padding: 1%;
+    
 }
 #consumers .wrapper ul{
     color: white;
@@ -362,9 +368,10 @@
     width: 14rem;
     height: 1.5rem;
 }
-#consumers img{
+/* #consumers img{
+    
     position: absolute;
-}
+} */
 #consumers .image-1{
     left: 15%;
     top: 15%;
