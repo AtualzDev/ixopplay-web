@@ -271,7 +271,7 @@
   }
 .dots-holder{
     display: flex;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .dot {
     cursor: pointer;
