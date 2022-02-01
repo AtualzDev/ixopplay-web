@@ -26,6 +26,15 @@
 }
 
 
+
+/**GENERAL*/
+button{
+    width: 260px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #EF6C00;
+}
 /**NAV-BAR*/
 
 @media (max-width: 1600px) {
@@ -721,7 +730,7 @@
     border: none;
     background-color: #EF6C00;
     color: white;
-    width: 30%;
+    width: 260;
     height: 44px;
     font-size: 1rem;
     margin: 0 0 0 auto;
