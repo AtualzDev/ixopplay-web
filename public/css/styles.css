@@ -203,7 +203,7 @@ section{
     /* background-image: url("/public/assets/images/slider/ixopplaytelafundo.png"); */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -239,7 +239,7 @@ section{
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 50%;
+    height: auto;
     max-width: fit-content;
     margin-left: 15%;
     margin-bottom: 5%;
