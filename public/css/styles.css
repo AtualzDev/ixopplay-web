@@ -250,7 +250,7 @@ section{
     align-items: center;
 }
 .slider-img {
-    width: 100%;
+    width: 90%;
 }
 .slider-fade{
     display: flex;
@@ -286,7 +286,7 @@ section{
   }
 .dots-holder{
     display: flex;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .dot {
     cursor: pointer;
