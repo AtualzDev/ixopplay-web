@@ -53,7 +53,7 @@ section{
     }
     
 }
-@media (min-width: 1650px) {
+@media (min-width: 1600px) {
     .nav-bar {
         position: fixed;
         z-index: 9999;
