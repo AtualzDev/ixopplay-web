@@ -491,7 +491,6 @@ section{
 }
 #investors .content-holder{
     display: flex;
-    display: none;
     padding-left: 3%;
 }
 #investors .benefits-holder{
@@ -524,6 +523,9 @@ section{
 }
 #investors .restrict-area-holder{
     margin-left: 5%;
+    position: absolute;
+    top: 25%;
+    left: 55%;
 }
 #investors .restrict-area-holder .restrict-area-button{
     background-color: #FA8834;
