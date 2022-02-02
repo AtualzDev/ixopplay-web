@@ -355,7 +355,7 @@ section{
 
 }
 
-#consumers .wrapper{
+#consumers .slider-consumers{
     position: absolute;
     bottom: 5%;
     z-index: 999;
@@ -368,21 +368,12 @@ section{
     margin-top: 10rem;
     background-color: rgba(0, 0, 0, 0.329);
     padding: 1%;
-    
 }
-#consumers .wrapper ul{
-    color: white;
-    border-radius: 4px;
-    background-color: rgba(27, 24, 24, 0.671);
-    padding: 1.5rem;
-    margin-left: 2rem;
+#consumers .slider-consumers img{
+    width: 100%;
+    height: auto;
+}
 
-}
-#consumers .wrapper li{
-    text-align: center;
-    width: 14rem;
-    height: 1.5rem;
-}
 /* #consumers img{
     
     position: absolute;

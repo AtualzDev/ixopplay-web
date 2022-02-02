@@ -28,6 +28,25 @@ function showSlides() {
 
     setTimeout(showSlides, 5000)
 }
+let consumerSliderIndex = 1;
+showConsumersSlider();
+function showConsumersSlider() {
+    console.log('calling')
+    let i;
+    let slides = document.getElementsByClassName("consumer-slider-img");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].classList.add("slider-fade");
+    }
+    consumerSliderIndex++;
+    if (consumerSliderIndex > slides.length) {
+        consumerSliderIndex = 1
+    }
+    
+    slides[consumerSliderIndex - 1].style.display = "block";
+
+    setTimeout(showConsumersSlider, 5000)
+}
 
 //SECTIONS CHECK
 const sections = document.querySelectorAll("section");
